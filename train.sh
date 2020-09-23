@@ -1,0 +1,12 @@
+python train.py \
+    --case='test' \
+    --model_name='Unet_resnet50' \
+    --final_epoch=50 \
+    --train_data_path='coco/images' \
+    --valid_data_path='coco/images' \
+    --ann_path='coco/annotations' \
+    --params_path='params' \
+    --logs_path='logs' \
+    --num_worker=0 \
+    --batch_size=16 \
+    --opt_level='O1'
